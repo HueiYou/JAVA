@@ -1,27 +1,27 @@
 /******************************************
-*		  JAVA                 *
-*         4¡B5¡B6³¹¾ã¦X½m²ß           *
-*              ­pºâ¾÷	        	  *	
+*		  JAVA                    *
+*           4ã€5ã€6ç« æ•´åˆç·´ç¿’               *
+*                 è¨ˆç®—æ©Ÿ	                *
 ******************************************/
-import java.util.Scanner;
+import java.util.Scanner;	//è¦ç”¨åˆ°Scannerå°±è¦å®£å‘Šé€™è¡Œ
 
 public class test{
 	public static void main(String[] arg){
-		Scanner scan=new Scanner(System.in);	//«Å§i±½´yÅÜ¼Æ
-		char c;	//c:¹Bºâ¤¸
-		int x,y,sum=0,flag=0; //flag:§PÂ_¨Ï¥ÎªÌ²Å¸¹¬O§_¿é¤J¥¿½T
+		Scanner scan=new Scanner(System.in);	//å®£å‘Šæƒæè®Šæ•¸
+		char c;	//c:é‹ç®—å…ƒ
+		int x,y,sum=0,flag=0; //flag:åˆ¤æ–·ä½¿ç”¨è€…ç¬¦è™Ÿæ˜¯å¦è¼¸å…¥æ­£ç¢º
 		
-		System.out.println("=====¾ã¼Æ­pºâ¾÷====="); //printfln:Åã¥Ü§¹¦r·|´«¦æ
-		System.out.print("½Ğ¿é¤Jx:"); //print:Åã¥Ü¦r¡A¨S¦³´«¦æ
+		System.out.println("=====æ•´æ•¸è¨ˆç®—æ©Ÿ====="); //printfln:é¡¯ç¤ºå®Œå­—æœƒæ›è¡Œ
+		System.out.print("è«‹è¼¸å…¥x:"); //print:é¡¯ç¤ºå­—ï¼Œæ²’æœ‰æ›è¡Œ
 		x=scan.nextInt();
-		System.out.print("½Ğ¿é¤Jy:");
+		System.out.print("è«‹è¼¸å…¥y:");
 		y=scan.nextInt();
-		System.out.printf("½Ğ¿é¤J+¡B-¡B*¡B/¡B%%¨ä¤¤¤@­Ó¡G");  //­nÅã¥Ü%ªº¸Ü¡A¤@©w­n¥´%%
-		c=scan.next().charAt(0);    //Åª¨ú¦r¤¸ªº»yªk¡AÅª¨ú¦r¦ê¥u­n¥´scan.next()´N¦n
+		System.out.printf("è«‹è¼¸å…¥+ã€-ã€*ã€/ã€%%å…¶ä¸­ä¸€å€‹ï¼š");  //è¦é¡¯ç¤º%çš„è©±ï¼Œä¸€å®šè¦æ‰“%%
+		c=scan.next().charAt(0);    //è®€å–å­—å…ƒçš„èªæ³•ï¼Œè®€å–å­—ä¸²åªè¦æ‰“scan.next()å°±å¥½
 			
 		switch(c)
 		{
-			case '+':   //³æ¤@¦r¤¸¥Î³æ¤Ş¸¹¡A¦r¦ê¥ÎÂù¤Ş¸¹¥]¦í
+			case '+':   //å–®ä¸€å­—å…ƒç”¨å–®å¼•è™Ÿï¼Œå­—ä¸²ç”¨é›™å¼•è™ŸåŒ…ä½
 				sum=x+y;
 				break;
 			case '-':
@@ -43,11 +43,11 @@ public class test{
 		
 		if(flag==1)
 		{
-			System.out.println("¿é¤J¿ù»~¡I");
+			System.out.println("è¼¸å…¥éŒ¯èª¤ï¼");
 		}
 		else
 		{
-			System.out.printf("µ²ªG=%d\n",sum);
+			System.out.printf("çµæœ=%d\n",sum);
 		}
 	}
 }
